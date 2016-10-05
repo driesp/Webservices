@@ -54,14 +54,21 @@
 	2. email                           nagios@localhost        ; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
 11. edit the nrpe check command
 	1. edit the /usr/local/nagios/etc/objects/commands.cfg
-	2. add following to the end of the file
-	define command{
-        command_name check_nrpe
-        command_line $USER1$/check_nrpe -H $HOSTADDRESS$ -c $ARG1$
-		}
+	2. add following to the end of the file 'define command{command_name check_nrpe command_line $USER1$/check_nrpe -H $HOSTADDRESS$ -c $ARG1$ }'
 12. Configure apache
 	1. enable rewrite and cgi
 	2. add htpasswd file
 		1. sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
 	3. create link of nagios.conf to the sites-enabled directory sudo ln -s /etc/apache2/sites-available/nagios.conf /etc/apache2/sites-enabled/
 	4. restart nagios and apache2
+
+###Add a monitored server (Windows)
+1. install nsclient++
+2. Use the webclient to let your nagios server acces the nsclient (also check the port)
+3. make connection in the windows.cnf file
+4. enable the windows.cnf file
+
+###Install a new nagios theme(Arana Theme)
+1. download the zip from their sourceforge page.
+2. extract the contents to /usr/local/nagios/share
+3. done!
