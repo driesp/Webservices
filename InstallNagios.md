@@ -64,7 +64,9 @@
 
 ###Add a monitored server (Windows)
 1. install nsclient++
-2. Use the webclient to let your nagios server acces the nsclient (also check the port)
+	1. make sure that firewallports are open.
+	2. netsh firelwall set iscp 8
+2. In the Config add the services that need to be checked.
 3. make connection in the windows.cnf file
 4. enable the windows.cnf file
 
