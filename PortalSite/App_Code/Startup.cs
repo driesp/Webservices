@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(UserPortal.Startup))]
-namespace UserPortal
+[assembly: OwinStartupAttribute(typeof(PortalSite.Startup))]
+namespace PortalSite
 {
     public partial class Startup {
         public void Configuration(IAppBuilder app) {

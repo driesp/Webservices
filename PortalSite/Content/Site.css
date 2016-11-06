@@ -27,3 +27,20 @@ textarea {
         padding: 0;
     }
 }
+
+.panel-tall
+{
+    height: 200px;
+}
+.panel-short
+{
+    height: 100px;
+}
+.pannel-medium
+{
+    height: 150px;
+}
+.panel-container
+{
+    margin: 20px 20px 20px 20px;
+}
