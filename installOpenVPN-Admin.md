@@ -15,3 +15,9 @@
 6. The ``www_base_dir`` is the folder where you want to put your website --> see apache
 7. Visit following website and create an admin user there(Only Possible after installation and single time)``http://your-installation/index.php?installation``
 
+# Extra Configuration #
+
+In the created conf files. I changed the port to 1194 and the protocol to UDP -> we did this for speed.
+
+In the server configuration file we also changed the buffer size and we made it so that the DNS of the internal network was passed to the openVPN clients.
+
