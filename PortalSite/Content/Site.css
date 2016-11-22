@@ -12,11 +12,6 @@ body {
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -44,7 +39,7 @@ textarea {
     border: 0 0 0 0;
     padding: 0 0 0 0;
 }
-.pannel-medium
+.panel-medium
 {
     height: 150px;
     border: 0 0 0 0;
@@ -60,8 +55,7 @@ textarea {
 .frame { width: 280px; height: 200px; border: 0px; }
 .frame {
 
-    position:absolute;
-    z-index:2;
+    z-index: -1;
     zoom: 1;
     -moz-transform: scale(1);
     -moz-transform-origin: 0 0;
@@ -93,4 +87,72 @@ textarea {
 {
     width:100%;
     height:100%;
+}
+.btn-special
+{
+    z-index: 2;
+    padding : 0 0 0 0;
+    border-width: 0;
+    border-radius:0;
+    background-color : rgba(32,80,129,0.25);
+}
+.btn-special:hover
+{
+    background-color : rgba(32,80,129,1);
+    color:rgb(255, 255, 255);
+}
+.btn-special:active
+{
+    background-color : rgba(32,80,129,1);
+}
+.btn-special:visited
+{
+    background-color : rgba(32,80,129,1);
+}
+.btn-special:link
+{
+    background-color : rgba(32,80,129,1);
+}
+.name
+{
+    position:absolute;
+    width:280px;
+    padding: 0 0 0 0;
+    padding-top: 90px;
+    margin:0 0 0 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size:20px;
+    color:rgba(255, 255, 255,1)
+
+}
+.loginForm
+{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    width:400px;
+    height:400px;
+}
+.fixedWidth
+{
+    width:100%;
+}
+.fixedWidth2
+{
+    width:150px;
+}
+.fixedPadding
+{
+    padding-bottom:10px;
+}
+.pullLeft
+{
+    float:right;
+}
+.fixedMargin
+{
+    margin-top:10px;
 }
