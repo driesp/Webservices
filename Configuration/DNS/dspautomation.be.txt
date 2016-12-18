@@ -1,0 +1,87 @@
+;
+;  Database file (null) for dspautomation.be zone.
+;      Zone version:  1880
+;
+
+@                       IN  SOA mars.dspautomation.be. hostmaster.dspautomation.be. (
+                        		1880         ; serial number
+                        		900          ; refresh
+                        		600          ; retry
+                        		86400        ; expire
+                        		3600       ) ; default TTL
+
+;
+;  Zone NS records
+;
+
+@                       NS	mars.dspautomation.be.
+
+;
+;  Zone records
+;
+
+@                       600	A	192.168.10.2
+@                       600	A	192.168.0.20
+
+;
+;  Delegated sub-zone:  _msdcs.dspautomation.be.
+;
+_msdcs                  NS	mars.dspautomation.be.
+;  End delegation
+
+_gc._tcp.Default-First-Site-Name._sites 600	SRV	0 100 3268	mars.dspautomation.be.
+_kerberos._tcp.Default-First-Site-Name._sites 600	SRV	0 100 88	mars.dspautomation.be.
+_ldap._tcp.Default-First-Site-Name._sites 600	SRV	0 100 389	mars.dspautomation.be.
+_gc._tcp                600	SRV	0 100 3268	mars.dspautomation.be.
+_kerberos._tcp          600	SRV	0 100 88	mars.dspautomation.be.
+_kpasswd._tcp           600	SRV	0 100 464	mars.dspautomation.be.
+_ldap._tcp              600	SRV	0 100 389	mars.dspautomation.be.
+_kerberos._udp          600	SRV	0 100 88	mars.dspautomation.be.
+_kpasswd._udp           600	SRV	0 100 464	mars.dspautomation.be.
+autodiscover            A	192.168.0.20
+DomainDnsZones          600	A	192.168.10.2
+                        600	A	192.168.0.20
+_ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones 600	SRV	0 100 389	mars.dspautomation.be.
+_ldap._tcp.DomainDnsZones 600	SRV	0 100 389	mars.dspautomation.be.
+DSP-server              1200	A	192.168.0.181
+EARTH                   1200	A	192.168.0.110
+                        1200	AAAA	fd71:7d0a:ac82:0:51f0:ca22:84ef:fd55
+                        1200	AAAA	fd71:7d0a:ac82::7e8
+                        1200	AAAA	2a02:1810:4e12:e400:51f0:ca22:84ef:fd55
+ForestDnsZones          600	A	192.168.10.2
+                        600	A	192.168.0.20
+_ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones 600	SRV	0 100 389	mars.dspautomation.be.
+_ldap._tcp.ForestDnsZones 600	SRV	0 100 389	mars.dspautomation.be.
+HUBBLE                  1200	A	192.168.2.253
+                        1200	A	192.168.0.36
+                        1200	A	192.168.0.35
+intranet                A	192.168.0.25
+                        A	192.168.0.35
+jupiter                 A	192.168.0.90
+                        A	192.168.2.254
+                        AAAA	fd71:7d0a:ac82:0:a236:9fff:fe3e:7b8a
+                        AAAA	fd71:7d0a:ac82::27f
+                        AAAA	2a02:1810:4e12:e400:a236:9fff:fe3e:7b8a
+mailbox                 A	192.168.0.20
+mars                    A	192.168.0.20
+                        A	192.168.10.2
+mercurius               A	192.168.0.90
+                        AAAA	2a02:1810:4e12:e400:a236:9fff:fe3e:7b8a
+                        AAAA	fd71:7d0a:ac82:0:a236:9fff:fe3e:7b8a
+ORION-1                 1200	A	192.168.0.150
+                        1200	AAAA	fd71:7d0a:ac82:0:912:7bbf:426:33c6
+                        1200	AAAA	fd71:7d0a:ac82::ddc
+                        1200	AAAA	2a02:1810:4e12:e400:912:7bbf:426:33c6
+ORION-2                 1200	A	192.168.0.151
+                        1200	AAAA	fd71:7d0a:ac82:0:ccdb:855d:cdbf:f8f3
+                        1200	AAAA	fd71:7d0a:ac82::ddc
+                        1200	AAAA	2a02:1810:4e12:e400:ccdb:855d:cdbf:f8f3
+ORION-3                 1200	A	192.168.0.152
+                        1200	AAAA	fd71:7d0a:ac82:0:a0e9:d0f3:2bd0:8506
+                        1200	AAAA	fd71:7d0a:ac82::72b
+                        1200	AAAA	2a02:1810:4e12:e400:a0e9:d0f3:2bd0:8506
+phonebook               A	192.168.0.20
+                        A	192.168.0.25
+PLUTO                   A	192.168.0.25
+URANUS                  A	192.168.0.30
+vpn                     A	192.168.0.25
