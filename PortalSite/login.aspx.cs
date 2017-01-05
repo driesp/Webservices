@@ -18,7 +18,7 @@ public partial class Contact : Page
     }
     public void login_click(object sender, EventArgs e)
     {
-        using (PrincipalContext pc = new PrincipalContext(ContextType.Domain, "DSPAUTOMATION.be","Administrator","Dries9627!"))
+        using (PrincipalContext pc = new PrincipalContext(ContextType.Domain, "DSPAUTOMATION.be","dummy.viewer", "vpJSqS5aLPTFGvw3fyCsKBh4"))
         {
             bool isValid = pc.ValidateCredentials(UserName.Text, Password.Text);
             if(isValid)
