@@ -22,3 +22,17 @@
 2. Following the provided steps the installation process is quite easy
 3. done
 4. The link with AD will be automcatically added. So all the domain pc's will automcatically take all the DNS information from the server and will push their information to the server.
+
+# Installing IIS7 with project
+1. make sure all the latest updates are installed
+2. go to the server manager
+3. go to add roles and features
+4. select role based installation and select IIS.
+5. Basic settings are enough for a simple ASP.net Application.
+6. When done installing open IIS manager.
+7. Create a new website by right clicking the server name and selecting new site.
+8. Select a folder where your data will be placed and select which ip it should listen to and the adress. 
+9. Export your project by rightclicking export on your asp.net project and select export to folder.
+10. transport this folder to the server.
+11. execute the script in this folder follewed by /Y and the project will be installed to the right website.
+12. enjoy
